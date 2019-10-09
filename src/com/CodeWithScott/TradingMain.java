@@ -1,15 +1,15 @@
 package com.CodeWithScott;
 
-public class TradingMain {
+
+public class TradingMain implements Market {
 
 //    private final TradeDAL tradeDAL = new TradeDAL(new JdbcTemplate());
+    Market market;
 
-//    public TradeDAL(JdbcTemplate jdbcTemplate){
-//
-//    }
 
-    public void bookTrade(Asset asset){
-//        some code
+    @Override
+    public void bookTrade(Asset asset) {
+        System.out.println(asset + "bookTrade");
     }
 
     protected void saveTradeDetails(){
